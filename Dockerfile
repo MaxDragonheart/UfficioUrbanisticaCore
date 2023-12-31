@@ -67,7 +67,7 @@ ENV SECRET_KEY=${SECRET_KEY} \
 RUN mkdir -p project static-folder media-folder
 COPY project project
 RUN rm -rf project/project/.env
-COPY media-folder/demo_data media-folder/demo_data
+COPY demo_data demo_data
 RUN rm -rf project/fixtures
 
 COPY scripts/production/backup_restore/backup-fixtures.sh ./backup_restore/backup-fixtures.sh
