@@ -67,14 +67,15 @@ ENV SECRET_KEY=${SECRET_KEY} \
 RUN mkdir -p project static-folder media-folder
 COPY project project
 RUN rm -rf project/project/.env
-COPY media-folder/demo_data media-folder/demo_data
+COPY demo_data demo_data
 RUN rm -rf project/fixtures
+COPY demo_data/fixtures project/fixtures
 
 COPY scripts/production/backup_restore/backup-fixtures.sh ./backup_restore/backup-fixtures.sh
 COPY scripts/production/backup_restore/restore-fixtures.sh ./backup_restore/restore-fixtures.sh
+RUN chmod +x ./backup_restore/**.sh
 
 COPY scripts/production/migrate-collectstic.sh ./migrate-collectstic.sh
 COPY scripts/production/start_project-production.sh ./start_project-production.sh
-
 RUN chmod +x **.sh
 
