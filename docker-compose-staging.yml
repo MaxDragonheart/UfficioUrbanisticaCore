@@ -17,7 +17,7 @@ services:
   website:
     image: maxdragonheart/${PROJECT_NAME}
     build:
-      context: ./project
+      context: ./
       dockerfile: Dockerfile
     environment:
       PROJECT_NAME: ${PROJECT_NAME}
