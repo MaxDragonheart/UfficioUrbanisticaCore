@@ -9,7 +9,7 @@ PROJECT_NAME=ufficio_urbanistica_test
 # Django
 SECRET_KEY='YOUR-SECRET-KEY'
 DB_ENGINE=django.contrib.gis.db.backends.postgis
-ALLOWED_HOSTS=127.0.0.1, localhost
+ALLOWED_HOSTS=['localhost', '127.0.0.1', '0.0.0.0', '*']
 CSRF_TRUSTED_ORIGINS=['http://domin.io', 'https://domin.io']
 DEBUG=0
 DB_NAME=YOUR-DB_NAME

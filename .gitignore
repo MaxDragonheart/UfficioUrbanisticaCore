@@ -136,7 +136,6 @@ poetry.lock
 .idea
 
 # Project folders
-/media-folder/uploads
-/media-folder/gis-data
+/media-folder
 /project/fixtures
 /static-folder
