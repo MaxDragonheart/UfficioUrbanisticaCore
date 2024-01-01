@@ -8,7 +8,7 @@
     "timestamp": "2022-09-24T17:49:36.377Z",
     "name": "Documento excel",
     "description": "Questo è un",
-    "file": "demo_data/calculus.xlsx",
+    "file": "demo_media/calculus.xlsx",
     "highlighted": true
   }
 },
@@ -21,7 +21,7 @@
     "timestamp": "2022-09-24T17:49:51.287Z",
     "name": "Documento pdf",
     "description": "Questo è un pdf",
-    "file": "demo_data/read.pdf",
+    "file": "demo_media/read.pdf",
     "highlighted": false
   }
 },
@@ -34,7 +34,7 @@
     "timestamp": "2022-09-24T17:50:09.978Z",
     "name": "Documento word",
     "description": "Questo è un Microsoft Word",
-    "file": "demo_data/readthedoc.docx",
+    "file": "demo_media/readthedoc.docx",
     "highlighted": false
   }
 }
